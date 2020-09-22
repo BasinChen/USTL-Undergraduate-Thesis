@@ -1,0 +1,74 @@
+\begin{thebibliography}{1}
+\providecommand{\bibauthor}[1]{#1}
+\providecommand{\bibeditor}[1]{#1}
+\providecommand{\bibtranslator}[1]{#1}
+\providecommand{\bibtitle}[1]{#1}
+\providecommand{\bibbooktitle}[1]{#1}
+\providecommand{\bibjournal}[1]{#1}
+\providecommand{\bibmark}[1]{#1}
+\providecommand{\bibcountry}[1]{#1}
+\providecommand{\bibpatentid}[1]{#1}
+\providecommand{\bibedition}[1]{#1}
+\providecommand{\biborganization}[1]{#1}
+\providecommand{\bibaddress}[1]{#1}
+\providecommand{\bibpublisher}[1]{#1}
+\providecommand{\bibinstitution}[1]{#1}
+\providecommand{\bibschool}[1]{#1}
+\providecommand{\bibvolume}[1]{#1}
+\providecommand{\bibnumber}[1]{#1}
+\providecommand{\bibversion}[1]{#1}
+\providecommand{\bibpages}[1]{#1}
+\providecommand{\bibmodifydate}[1]{#1}
+\providecommand{\bibcitedate}[1]{#1}
+\providecommand{\bibyear}[1]{#1}
+\providecommand{\bibdate}[1]{#1}
+\providecommand{\biburl}[1]{\newline\url{#1}}
+
+\bibitem{RN1}
+\bibauthor{潘建伟}\@.
+  \bibtitle{基于Matlab的波导特性的二次FEM方法分析及仿真探究}\bibmark{[J]}\@.
+  \bibjournal{无线互联科技}\@, \bibyear{2019}\@,
+  \bibvolume{16}\bibnumber{(10)}\thinspace{}\textnormal{:
+  }\bibpages{108\thinspace{}\textnormal{--}\thinspace{}109}\@.
+
+\bibitem{RN2}
+\bibauthor{李丽}\@.
+  \bibtitle{基于多传感器集成的机器人整机自动控制方法研究}\bibmark{[J]}\@.
+  \bibjournal{现代电子技术}\@, \bibyear{2020}\@,
+  \bibvolume{43}\bibnumber{(18)}\thinspace{}\textnormal{:
+  }\bibpages{175\thinspace{}\textnormal{--}\thinspace{}177}\@.
+
+\bibitem{RN3}
+\bibauthor{周念成\@, 莫复雪\@, 肖舒严, et~al}\@.
+  \bibtitle{计及多电压等级配电网拓扑约束的协调转供优化}\bibmark{[J]}\@.
+  \bibjournal{中国电机工程学报}\@, \thinspace{}\textnormal{:
+  }\bibpages{1\thinspace{}\textnormal{--}\thinspace{}17}\@.
+
+\bibitem{RN4}
+\bibauthor{郭凯}\@.
+  \bibtitle{基于串联校正原理的LTI系统校正实验综述报告}\bibmark{[J]}\@.
+  \bibjournal{科技视界}\@,
+  \bibyear{2020}\bibnumber{(26)}\thinspace{}\textnormal{:
+  }\bibpages{74\thinspace{}\textnormal{--}\thinspace{}75}\@.
+
+\bibitem{RN5}
+\bibauthor{朴民哲}\@.
+  \bibtitle{基于缀饰态方案制备两原子四维纠缠态}\bibmark{[J]}\@.
+  \bibjournal{量子光学学报}\@, \thinspace{}\textnormal{:
+  }\bibpages{1\thinspace{}\textnormal{--}\thinspace{}7}\@.
+
+\bibitem{RN6}
+\bibauthor{伍钢\@, 张玉雪\@, 韦佳塔, et~al}\@.
+  \bibtitle{一种基于量子点免疫层析技术的轮状病毒检测方法}\bibmark{[J]}\@.
+  \bibjournal{中国生物化学与分子生物学报}\@,
+  \thinspace{}\textnormal{:
+  }\bibpages{1\thinspace{}\textnormal{--}\thinspace{}10}\@.
+
+\bibitem{RN7}
+\bibauthor{PEI Y\@, TANG Y\@, HUANG T}\@. \bibtitle{Statistical inference for
+  multivariate longitudinal data with irregular auto-correlated error
+  process}\bibmark{[J]}\@. \bibjournal{Science China(Mathematics)}\@,
+  \bibyear{2020}\@, \bibvolume{63}\bibnumber{(10)}\thinspace{}\textnormal{:
+  }\bibpages{2117\thinspace{}\textnormal{--}\thinspace{}2136}\@.
+
+\end{thebibliography}
