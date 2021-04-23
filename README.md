@@ -24,3 +24,6 @@
 
 * 本模板在均在本人课余时间完成，完全免费，请勿用于商业用途
 * 由于本人水平有限，如有不妥之处敬请指教
+
+Copyright (C) 2021, BasinChen.
+All Rights Reserved.
