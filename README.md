@@ -11,8 +11,8 @@
 * 本模板基于TeXLive2020发行版编写，版本相差较大可能导致一些错误
 * 对于新手而言，不建议没有$\LaTeX$使用经验的人直接使用本模板
 * 在.cls文件中提供了一些注释，供有能力的使用者自行根据个人需求修改
-* 关于参考文献的引用，根据学校要求采用gbt7714-2005标准下引用方式，而发行版默认方法高于此版本，具体配置方法请参考[https://www.latexstudio.net/archives/1541.html](https://www.latexstudio.net/archives/1541.html)。若要解除此限制，在cls文件最后注释掉 (在前面加“%”即可)
-> \bibliographystyle{gbt7714-2005}
+* 关于参考文献的引用，根据学校要求采用gbt7714-2005标准下引用方式，而发行版默认方法高于此版本，具体配置方法请参考[https://www.latexstudio.net/archives/1541.html](https://www.latexstudio.net/archives/1541.html)。若要解除此限制，请在末尾改为使用
+> \bibliographystyle{gbt7714-numerical}
 * 如果运行出错，建议删除辅助文件再次尝试
 * 作者精力有限，尚未开发MacOS和Linux版本
 
