@@ -74,25 +74,25 @@
 %这是目录的设置，请勿修改
 \titlecontents{section}
     [0mm]
-    {\xiaosi \hei \vspace{18pt}}%
+    {\xiaosi \hei \vspace{7.5pt}}%
     {\contentslabel{6.35mm}}%
     {}%
     {{~\titlerule*[0.6pc]{$.$}~\contentspage}}%
 \titlecontents{subsection}
     [3.175mm]
-    {\xiaosi \song \vspace{18pt}}%
+    {\xiaosi \song \vspace{7.5pt}}%
     {\contentslabel{9.525mm}}%
     {}%
     {{~\titlerule*[0.6pc]{$.$}~\contentspage}}%
 \titlecontents{subsubsection}
     [6.35mm]
-    {\xiaosi \song \vspace{18pt}}%
+    {\xiaosi \song \vspace{7.5pt}}%
     {\contentslabel{12.7mm}}%
     {}%
     {{~\titlerule*[0.6pc]{$.$}~\contentspage}}%
 \titlecontents{paragraph}
     [9.525mm]
-    {\xiaosi \song \vspace{18pt}}%
+    {\xiaosi \song \vspace{7.5pt}}%
     {\contentslabel{15.875mm}}%
     {}%
 {{~\titlerule*[0.6pc]{$.$}~\contentspage}}%
