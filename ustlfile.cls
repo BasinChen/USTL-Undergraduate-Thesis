@@ -112,7 +112,7 @@
 }
 \makeatother
 
-\renewcommand\abstractname{摘要}
+\renewcommand\abstractname{\sanhao{摘要}}
 \renewcommand{\abstracttextfont}{\xiaosi\kai}
 \newcommand{\keywords}[1]{\vskip2ex\par\noindent\xiaosi{\sihao\hei 关键词: } #1}
 \newcommand{\ekeywords}[1]{\vskip2ex\par\noindent\xiaosi{\sihao Key Words: }#1}
