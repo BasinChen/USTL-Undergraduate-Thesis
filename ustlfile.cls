@@ -106,7 +106,7 @@
         \vskip 1em% %%%  标题下面只有1em的缩进或margin
         {\global\let\author\@empty}%
         {\global\let\date\@empty}%
-        \thispagestyle{empty} %  不设置页面样式
+        %\thispagestyle{empty} %  不设置页面样式
     \end{center}%
   \setcounter{footnote}{0}%
 }
