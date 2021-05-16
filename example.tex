@@ -165,6 +165,7 @@ format = \sanhao\center\bfseries,
    \addcontentsline{toc}{section}{\hspace{-0.65cm}总结与展望}
    \clearpage
  \section*{总结与展望}
+ 在这里写内容
  \newpage
    用下面那样的命令引用引用参考文献
    \upcite{RN1}
@@ -189,17 +190,17 @@ format = \sanhao\center\bfseries,
    不能这样引用参考文献
    \cite{RN7}
    \newpage  
-    \addcontentsline{toc}{section}{\hspace{-0.65cm}致谢}
-\clearpage
+    \addcontentsline{toc}{section}{\hspace{-0.65cm}致谢}% 将其加入目录
+\clearpage% 最好不要改
    \section*{致谢}
 
    这是致谢的内容
    \newpage  
-    \addcontentsline{toc}{section}{\hspace{-0.65cm}参考文献}
+    \addcontentsline{toc}{section}{\hspace{-0.65cm}参考文献}% 将其加入目录
 \clearpage
    \bibliography{Library}
       \newpage
-      \addcontentsline{toc}{section}{\hspace{-0.65cm}附录}
+      \addcontentsline{toc}{section}{\hspace{-0.65cm}附录}% 将其加入目录
 \clearpage
    \section*{附录}
    这是附录的内容
