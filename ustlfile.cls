@@ -13,56 +13,49 @@
 \LoadClass[a4paper,UTF8,12pt]{ctexart}
 \RequirePackage{ctex,amsmath,setspace}
 \RequirePackage{fancyhdr,zhlipsum,booktabs}
-\RequirePackage{lipsum,caption,subcaption}
+\RequirePackage{lipsum,caption,subcaption,hyperref}
 \RequirePackage{graphicx,floatrow,titlesec,float}
 \RequirePackage{titletoc,cite}
 \RequirePackage{abstract}
-\RequirePackage[left=2.5cm,right=2.5cm,top=3cm,bottom=2.5cm]{geometry}
 
 \newcommand*{\song}{\CJKfamily{zhsong}} % 宋体
 \newcommand*{\hei}{\CJKfamily{zhhei}} % 黑体
 \newcommand*{\kai}{\CJKfamily{zhkai}} % 楷书
-\renewcommand{\baselinestretch}{1.5}    % 1.5倍行距
+\renewcommand{\baselinestretch}{1.25}    % 1.5倍行距
 \newcommand{\erhao}{\fontsize{22pt}{33pt}\selectfont}
 \newcommand{\sanhao}{\fontsize{16pt}{24pt}\selectfont}
 \newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}
 \newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}
 \newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
-\newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}%公式编号
+\counterwithin{equation}{section}%从每章开始重新编号？
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
+\newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}} %参考文献引用
+\RequirePackage[numbers,super]{natbib}
+\RequirePackage{url}
+\setcitestyle{open={[},close={]}}
 \renewcommand{\footnotesize}{\fontsize{10.5pt}{\baselineskip}\selectfont}
 \renewcommand{\thetable}{\thesection.\arabic{table}}
 \renewcommand{\thefigure}{\thesection.\arabic{figure}}
 
 \ctexset{
-	section={
-		format={\zihao{3}\heiti},
-		name={},
-		aftername={\hspace{1em}},
-		number=\arabic{section},
-	},
-	subsection={
-		format={\zihao{4}\heiti},
-		name={},
-		aftername={\hspace{1em}},
-		number={\arabic{section}.\arabic{subsection}},
-	},
-	subsubsection={
-		format={\zihao{-4}\heiti},
-		name={},
-		aftername={\hspace{1em}},
-		number={\arabic{section}.\arabic{subsection}.\arabic{subsubsection}},
-    },
-    paragraph={
-        format={\zihao{-4}\heiti},
-        name={},
-        aftername={\hspace{1em}},
-        number={\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{paragraph}}
-    },
-	appendix={
-		name={附录,：},
-		number=\arabic{section},
-	}
+section = {
+format = \raggedright\sanhao\bfseries,
 }
+}
+\ctexset{
+   subsection = {
+format = \raggedright\sihao\bfseries,
+}
+}
+
+\ctexset{
+   subsubsection = {
+format = \raggedright\xiaosi\bfseries,
+}
+}
+
 \RequirePackage[left=2.5cm,right=2.5cm,top=3cm,bottom=2.5cm]{geometry}
 \pagestyle{fancy}
 \fancyhead[C]{辽宁科技大学本科生毕业设计(论文)}
@@ -96,13 +89,14 @@
     {\contentslabel{15.875mm}}%
     {}%
 {{~\titlerule*[0.6pc]{$.$}~\contentspage}}%
+\newcommand\specialsectioning{\setcounter{secnumdepth}{-2}}
 % 请勿修改
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makeatletter % change default title style
 \renewcommand*\maketitle{%
     \begin{center}% 居中标题
         \hei % 默认粗体
-        {\erhao \@title \par} % LARGE字号
+        {\erhao \@title \par} % 字号
         \vskip 1em% %%%  标题下面只有1em的缩进或margin
         {\global\let\author\@empty}%
         {\global\let\date\@empty}%
@@ -111,7 +105,6 @@
   \setcounter{footnote}{0}%
 }
 \makeatother
-
 \renewcommand\abstractname{\sanhao{摘要}}
 \renewcommand{\abstracttextfont}{\xiaosi\kai}
 \newcommand{\keywords}[1]{\vskip2ex\par\noindent\xiaosi{\sihao\hei 关键词: } #1}
