@@ -73,7 +73,7 @@ $E=mc^2$
 \begin{table}[htbp] 
 \setlength{\abovecaptionskip}{0.cm}
 \setlength{\belowcaptionskip}{-0.9cm}
-    \caption{ 示例表格} 
+    \caption{示例表格} 
     \begin{center}
         \begin{tabular}{lcl} 
      \toprule 
@@ -157,10 +157,16 @@ $E=mc^2$
        }{\caption{四个子图}\label{trifig}}
    \end{figure}
    \newpage
+   \ctexset{
+section = {
+format = \sanhao\center\bfseries,
+}
+}
    \addcontentsline{toc}{section}{\hspace{-0.65cm}总结与展望}
+   \clearpage
  \section*{总结与展望}
  \newpage
-   引用参考文献
+   用下面那样的命令引用引用参考文献
    \upcite{RN1}
    
    
@@ -180,16 +186,23 @@ $E=mc^2$
    引用参考文献
    \upcite{RN6}
    
-   引用参考文献
+   不能这样引用参考文献
    \cite{RN7}
-   \newpage
+   \newpage  
+    \addcontentsline{toc}{section}{\hspace{-0.65cm}致谢}
+\clearpage
    \section*{致谢}
+
    这是致谢的内容
-   \newpage
-   \section*{附录}
-   这是附录的内容
-   \newpage
-   \addcontentsline{toc}{section}{\hspace{-0.65cm}参考文献}
+   \newpage  
+    \addcontentsline{toc}{section}{\hspace{-0.65cm}参考文献}
 \clearpage
    \bibliography{Library}
+      \newpage
+      \addcontentsline{toc}{section}{\hspace{-0.65cm}附录}
+\clearpage
+   \section*{附录}
+   这是附录的内容
+
+
 \end{document}
