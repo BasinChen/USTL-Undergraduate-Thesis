@@ -15,6 +15,7 @@
 > \bibliographystyle{gbt7714-numerical}
 * 如果运行出错，建议删除辅助文件再次尝试
 * 作者精力有限，尚未开发MacOS和Linux版本
+* 对于结论、致谢、参考文献、附录这四部分，请不要修改tex文件中的固定命令，可以将“总结与展望”改为“绪论”，tex文件中的设置的含义是：清空之前的章标题左顶格并将其加入目录
 
 ## 编译
 * 作者使用Visual Studio Code编写代码，并用Recipe：XeLaTeX -> BibTeX -> XeLaTeX*2编译
