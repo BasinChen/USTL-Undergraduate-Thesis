@@ -16,7 +16,7 @@
 \RequirePackage{graphicx,float}
 \RequirePackage{titletoc,cite}
 \RequirePackage{abstract}
-
+\RequirePackage{caption}
 \newcommand*{\song}{\CJKfamily{zhsong}} % 宋体
 \newcommand*{\hei}{\CJKfamily{zhhei}} % 黑体
 \newcommand*{\kai}{\CJKfamily{zhkai}} % 楷书
@@ -26,6 +26,8 @@
 \newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}
 \newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}
 \newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
+\captionsetup[figure]{labelfont={bf},font={bf,small}}
+\captionsetup[table]{labelfont={bf},font={bf,small}}
 \renewcommand{\theequation}{\thesection.\arabic{equation}}%公式编号
 \counterwithin{equation}{section}%从每章开始重新编号？
 \counterwithin{table}{section}
