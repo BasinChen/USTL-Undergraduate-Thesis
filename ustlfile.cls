@@ -11,10 +11,9 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{ustlthesis}[2021/1/22 version 2.0]
 \LoadClass[a4paper,UTF8,12pt]{ctexart}
-\RequirePackage{ctex,amsmath,setspace}
-\RequirePackage{fancyhdr,zhlipsum,booktabs}
-\RequirePackage{lipsum,caption,subcaption,hyperref}
-\RequirePackage{graphicx,floatrow,titlesec,float}
+\RequirePackage{amsmath}
+\RequirePackage{fancyhdr,booktabs}
+\RequirePackage{graphicx,float}
 \RequirePackage{titletoc,cite}
 \RequirePackage{abstract}
 
@@ -33,7 +32,6 @@
 \counterwithin{figure}{section}
 \newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}} %参考文献引用
 \RequirePackage[numbers,super]{natbib}
-\RequirePackage{url}
 \setcitestyle{open={[},close={]}}
 \renewcommand{\footnotesize}{\fontsize{10.5pt}{\baselineskip}\selectfont}
 \renewcommand{\thetable}{\thesection.\arabic{table}}
