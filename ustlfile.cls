@@ -3,7 +3,7 @@
 % University of science and technology LiaoNing
 % @file     cls file of thesis template
 % @author   Yuchen LIU
-% @version  2.0
+% @version  2.6
 % @date     22-Apr-2021
 % ***************************************************************
 % @attention PLEASE READ "README.md" FILE！
