@@ -1,13 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Copyright (C) 2021, BasinChen.
-% University of science and technology LiaoNing
-% @file     cls file of thesis template
-% @author   Yuchen LIU
-% @version  2.6
-% @date     22-Apr-2021
-% ***************************************************************
-% @attention PLEASE READ "README.md" FILE！
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{ustlthesis}[2021/1/22 version 2.0]
 \LoadClass[a4paper,UTF8,12pt]{ctexart}
@@ -17,18 +7,20 @@
 \RequirePackage{titletoc,cite}
 \RequirePackage{abstract}
 \RequirePackage{caption}
+\RequirePackage[left=2.5cm,right=2.5cm,top=3cm,bottom=2.5cm]{geometry}
+\setlength{\parskip}{0.5\baselineskip}
 \newcommand*{\song}{\CJKfamily{zhsong}} % 宋体
 \newcommand*{\hei}{\CJKfamily{zhhei}} % 黑体
 \newcommand*{\kai}{\CJKfamily{zhkai}} % 楷书
-\renewcommand{\baselinestretch}{1.25}    % 1.5倍行距
-\newcommand{\erhao}{\fontsize{22pt}{33pt}\selectfont}
-\newcommand{\sanhao}{\fontsize{16pt}{24pt}\selectfont}
-\newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}
-\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}
-\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
-\captionsetup[figure]{labelfont={bf},font={bf,small}}
-\captionsetup[table]{labelfont={bf},font={bf,small}}
+\linespread{1.625}   % 1.5倍行距
+%\newcommand{\erhao}{\fontsize{22pt}{33pt}\selectfont}
+%\newcommand{\sanhao}{\fontsize{16pt}{24pt}\selectfont}
+%\newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}
+%\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}
+%\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
 \renewcommand{\theequation}{\thesection.\arabic{equation}}%公式编号
+\captionsetup[figure]{labelfont={bf},font={bf,small},labelsep=space}
+\captionsetup[table]{labelfont={bf},font={bf,small},labelsep=space}
 \counterwithin{equation}{section}%从每章开始重新编号？
 \counterwithin{table}{section}
 \counterwithin{figure}{section}
@@ -41,22 +33,21 @@
 
 \ctexset{
 section = {
-format = \raggedright\sanhao\bfseries,
+format = \raggedright\zihao{3}\bfseries,
 }
 }
 \ctexset{
    subsection = {
-format = \raggedright\sihao\bfseries,
+format = \raggedright\zihao{4}\bfseries,
 }
 }
 
 \ctexset{
    subsubsection = {
-format = \raggedright\xiaosi\bfseries,
+format = \raggedright\zihao{-4}\bfseries,
 }
 }
 
-\RequirePackage[left=2.5cm,right=2.5cm,top=3cm,bottom=2.5cm]{geometry}
 \pagestyle{fancy}
 \fancyhead[C]{辽宁科技大学本科生毕业设计(论文)}
 \fancyhead[R]{第 \thepage 页}
@@ -65,38 +56,34 @@ format = \raggedright\xiaosi\bfseries,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %这是目录的设置，请勿修改
+\renewcommand{\contentsname}{\centerline{目录}}
 \titlecontents{section}
-    [0mm]
-    {\xiaosi \hei \vspace{7.5pt}}%
-    {\contentslabel{6.35mm}}%
+    [1em]
+    {\zihao{-4} \hei \vspace{0em}}%
+    {\contentslabel{1em}}%
     {}%
     {{~\titlerule*[0.6pc]{$.$}~\contentspage}}%
 \titlecontents{subsection}
-    [3.175mm]
-    {\xiaosi \song \vspace{7.5pt}}%
-    {\contentslabel{9.525mm}}%
+    [3em]
+    {\zihao{-4} \song\vspace{0em}}%
+    {\contentslabel{2em}}%
     {}%
     {{~\titlerule*[0.6pc]{$.$}~\contentspage}}%
 \titlecontents{subsubsection}
-    [6.35mm]
-    {\xiaosi \song \vspace{7.5pt}}%
-    {\contentslabel{12.7mm}}%
+    [5em]
+    {\zihao{-4} \song\vspace{0em}}%
+    {\contentslabel{3em}}%
     {}%
     {{~\titlerule*[0.6pc]{$.$}~\contentspage}}%
-\titlecontents{paragraph}
-    [9.525mm]
-    {\xiaosi \song \vspace{7.5pt}}%
-    {\contentslabel{15.875mm}}%
-    {}%
-{{~\titlerule*[0.6pc]{$.$}~\contentspage}}%
-\newcommand\specialsectioning{\setcounter{secnumdepth}{-2}}
-% 请勿修改
+
+%\newcommand\specialsectioning{\setcounter{secnumdepth}{-2}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makeatletter % change default title style
 \renewcommand*\maketitle{%
     \begin{center}% 居中标题
         \hei % 默认粗体
-        {\erhao \@title \par} % 字号
+        {\zihao{2} \@title \par} % 字号
         \vskip 1em% %%%  标题下面只有1em的缩进或margin
         {\global\let\author\@empty}%
         {\global\let\date\@empty}%
@@ -105,9 +92,10 @@ format = \raggedright\xiaosi\bfseries,
   \setcounter{footnote}{0}%
 }
 \makeatother
-\renewcommand\abstractname{\sanhao{摘要}}
-\renewcommand{\abstracttextfont}{\xiaosi\kai}
-\newcommand{\keywords}[1]{\vskip2ex\par\noindent\xiaosi{\sihao\hei 关键词: } #1}
-\newcommand{\ekeywords}[1]{\vskip2ex\par\noindent\xiaosi{\sihao Key Words: }#1}
-
+\renewcommand\abstractname{\zihao{3}{摘要}}
+\renewcommand{\abstracttextfont}{\zihao{-4}\kai}
+\renewcommand{\absleftindent}{0cm}
+\renewcommand{\absrightindent}{0cm}
+\newcommand{\keywords}[1]{\vskip2ex\par\noindent\zihao{-4}{\zihao{4}\hei 关键词: } #1}
+\newcommand{\ekeywords}[1]{\vskip2ex\par\noindent\zihao{-4}{\zihao{4}\bf Key Words: }#1}
 \bibliographystyle{gbt7714-2005}%参考文献格式
